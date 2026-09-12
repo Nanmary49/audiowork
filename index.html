@@ -6,13 +6,13 @@
     <title>Audio Work | Pilas para Audífonos en Quito</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Iconos públicos -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
     <!-- Cintillo superior de Horario -->
     <div class="top-bar">
-        <p><i class="fa-solid fa-phone-volume"></i> ¡Atención y Pedidos las 24 Horas! 📞✨ | Envíos desde Quito a todo el país</p>
+        <p><i class="fa-solid fa-phone-volume"></i> Atención por WhatsApp: 7:00 a. m. a 10:00 p. m. | Envíos desde Quito a todo el país</p>
     </div>
 
     <!-- Encabezado Principal / Hero -->
@@ -25,7 +25,71 @@
                 <span><i class="fa-solid fa-calendar-days"></i> CADUCIDAD: 2029 - 2030</span>
             </div>
         </div>
-    </header>
+<a class="catalog-link" href="#productos">Ver productos y precios</a></header>
+
+    <!-- Catálogo de Productos -->
+    <section class="catalog" id="productos">
+        <h2>Nuestro Catálogo de Pilas</h2>
+        <p class="section-desc">Elige el tamaño que corresponde al color de tu empaque. El envío se cotiza según tu sector; consulta el total por WhatsApp.</p>
+        
+        <div class="products-grid">
+            <!-- Pila 13 Blister (Foto1.jpeg) -->
+            <div class="product-card border-orange">
+                <div class="badge-color orange-bg">Modelo 13 - Naranja</div>
+                <div class="product-image-container">
+                    <img src="Foto1.jpeg" alt="Pila Rayovac 13 Naranja" class="product-img">
+                </div>
+                <h3>Blíster Pila 13</h3>
+                <p class="pack-info">Paquete con 6 unidades</p>
+                <div class="price">$5<span>.00</span></div>
+                <button class="btn-whatsapp" onclick="enviarPedido('Blíster de Pila 13 (Naranja)', 5)">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                </button>
+            </div>
+
+            <!-- Pila 312 Blister (Foto2.jpeg) -->
+            <div class="product-card border-brown">
+                <div class="badge-color brown-bg">Modelo 312 - Café</div>
+                <div class="product-image-container">
+                    <img src="Foto2.jpeg" alt="Pila Rayovac 312 Café" class="product-img">
+                </div>
+                <h3>Blíster Pila 312</h3>
+                <p class="pack-info">Paquete con 6 unidades</p>
+                <div class="price">$5<span>.00</span></div>
+                <button class="btn-whatsapp" onclick="enviarPedido('Blíster de Pila 312 (Café)', 5)">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                </button>
+            </div>
+
+            <!-- Pila 13 Caja (Foto1.jpeg) -->
+            <div class="product-card border-orange promo-card">
+                <div class="badge-color orange-bg">Ahorro Caja</div>
+                <div class="product-image-container">
+                    <img src="Foto1.jpeg" alt="Caja Rayovac 13 Naranja" class="product-img">
+                </div>
+                <h3>Caja Completa 13</h3>
+                <p class="pack-info">Incluye 10 blísters (60 pilas)</p><p class="savings">Ahorras $2 frente a 10 blísters individuales</p>
+                <div class="price">$48<span>.00</span></div>
+                <button class="btn-whatsapp" onclick="enviarPedido('Caja de Pila 13 (Naranja)', 48)">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir Oferta por WhatsApp
+                </button>
+            </div>
+
+            <!-- Pila 312 Caja (Foto2.jpeg) -->
+            <div class="product-card border-brown promo-card">
+                <div class="badge-color brown-bg">Ahorro Caja</div>
+                <div class="product-image-container">
+                    <img src="Foto2.jpeg" alt="Caja Rayovac 312 Café" class="product-img">
+                </div>
+                <h3>Caja Completa 312</h3>
+                <p class="pack-info">Incluye 10 blísters (60 pilas)</p><p class="savings">Ahorras $2 frente a 10 blísters individuales</p>
+                <div class="price">$48<span>.00</span></div>
+                <button class="btn-whatsapp" onclick="enviarPedido('Caja de Pila 312 (Café)', 48)">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir Oferta por WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
 
     <!-- Sección de Beneficios -->
     <section class="benefits">
@@ -69,80 +133,23 @@
         </div>
     </section>
 
-    <!-- Catálogo de Productos -->
-    <section class="catalog" id="productos">
-        <h2>Nuestro Catálogo de Pilas</h2>
-        <p class="section-desc">Elige el tamaño que corresponde al color de tu empaque:</p>
-        
-        <div class="products-grid">
-            <!-- Pila 13 Blister (Foto1.jpeg) -->
-            <div class="product-card border-orange">
-                <div class="badge-color orange-bg">Modelo 13 - Naranja</div>
-                <div class="product-image-container">
-                    <img src="Foto1.jpeg" alt="Pila Rayovac 13 Naranja" class="product-img">
-                </div>
-                <h3>Blíster Pila 13</h3>
-                <p class="pack-info">Paquete con 6 unidades</p>
-                <div class="price">$5<span>.00</span></div>
-                <button class="btn-whatsapp" onclick="enviarPedido('Blíster de Pila 13 (Naranja)', 5)">
-                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
-                </button>
-            </div>
-
-            <!-- Pila 312 Blister (Foto2.jpeg) -->
-            <div class="product-card border-brown">
-                <div class="badge-color brown-bg">Modelo 312 - Café</div>
-                <div class="product-image-container">
-                    <img src="Foto2.jpeg" alt="Pila Rayovac 312 Café" class="product-img">
-                </div>
-                <h3>Blíster Pila 312</h3>
-                <p class="pack-info">Paquete con 6 unidades</p>
-                <div class="price">$5<span>.00</span></div>
-                <button class="btn-whatsapp" onclick="enviarPedido('Blíster de Pila 312 (Café)', 5)">
-                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
-                </button>
-            </div>
-
-            <!-- Pila 13 Caja (Foto1.jpeg) -->
-            <div class="product-card border-orange promo-card">
-                <div class="badge-color orange-bg">Ahorro Caja</div>
-                <div class="product-image-container">
-                    <img src="Foto1.jpeg" alt="Caja Rayovac 13 Naranja" class="product-img">
-                </div>
-                <h3>Caja Completa 13</h3>
-                <p class="pack-info">Incluye 10 blísters (60 pilas)</p>
-                <div class="price">$48<span>.00</span></div>
-                <button class="btn-whatsapp" onclick="enviarPedido('Caja de Pila 13 (Naranja)', 48)">
-                    <i class="fa-brands fa-whatsapp"></i> Pedir Oferta por WhatsApp
-                </button>
-            </div>
-
-            <!-- Pila 312 Caja (Foto2.jpeg) -->
-            <div class="product-card border-brown promo-card">
-                <div class="badge-color brown-bg">Ahorro Caja</div>
-                <div class="product-image-container">
-                    <img src="Foto2.jpeg" alt="Caja Rayovac 312 Café" class="product-img">
-                </div>
-                <h3>Caja Completa 312</h3>
-                <p class="pack-info">Incluye 10 blísters (60 pilas)</p>
-                <div class="price">$48<span>.00</span></div>
-                <button class="btn-whatsapp" onclick="enviarPedido('Caja de Pila 312 (Café)', 48)">
-                    <i class="fa-brands fa-whatsapp"></i> Pedir Oferta por WhatsApp
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pie de Página -->
+<section class="purchase-info">
+<h2>Cómo comprar</h2>
+<ol><li>Elige tu producto y pulsa “Pedir por WhatsApp”.</li><li>Indícanos tu sector para confirmar el envío y el total.</li><li>Coordina el pago por transferencia. Confirmamos tu pedido una vez verificado el abono.</li></ol>
+<p><strong>Pago:</strong> transferencia bancaria, sujeta a verificación del abono.</p>
+<p><strong>Atención:</strong> de 7:00 a. m. a 10:00 p. m. (hora de Quito).</p>
+<p>Puedes dejar tu mensaje fuera de horario; responderemos durante la atención.</p>
+<p><strong>WhatsApp:</strong> <a href="https://wa.me/593979339137">+593 97 933 9137</a></p>
+</section>    <!-- Pie de Página -->
     <footer>
         <p>&copy; 2026 Audio Work - Quito, Ecuador.</p>
-        <a href="https://instagram.com" target="_blank" class="instagram-link">
+        <a href="https://www.instagram.com/audio_workec/" target="_blank" rel="noopener noreferrer" class="instagram-link">
             <i class="fa-brands fa-instagram"></i> Síguenos en Instagram @audio_workec
         </a>
     </footer>
 
     <!-- Botón Flotante General de WhatsApp -->
-    <a href="https://wa.me." class="whatsapp-floating" target="_blank">
+    <a href="https://wa.me/593979339137" aria-label="Contactar por WhatsApp" class="whatsapp-floating" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 

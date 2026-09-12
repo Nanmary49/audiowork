@@ -330,3 +330,17 @@ footer {
     object-fit: contain;
     border-radius: 4px;
 }
+.catalog-link { display:inline-block; margin-top:28px; padding:15px 28px; background:#d4af37; color:#0b1a30; font-size:1.15rem; font-weight:700; border-radius:8px; text-decoration:none; }
+.btn-whatsapp, .whatsapp-floating { background-color:#147d40; }
+.btn-whatsapp:hover, .whatsapp-floating:hover { background-color:#106433; }
+.btn-whatsapp { min-height:56px; }
+.orange-bg { color:#0b1a30; }
+.savings { color:#146437; font-weight:700; margin-bottom:15px; }
+.purchase-info { max-width:900px; margin:0 auto; padding:20px; }
+.purchase-info ol { padding-left:26px; }
+.purchase-info li, .purchase-info p { margin:12px 0; font-size:1.1rem; }
+.purchase-info a { color:#146437; font-weight:700; }
+a:focus-visible, button:focus-visible { outline:3px solid #a35300; outline-offset:4px; }
+footer { padding-bottom:100px; }
+@media (max-width:360px) { .products-grid, .benefits-grid { grid-template-columns:minmax(0,1fr); } .brand-title { font-size:2.3rem; } .tip-item { gap:12px; padding:14px; } }
+@media (prefers-reduced-motion:reduce) { .product-card { transition:none; } }
