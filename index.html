@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Work | Pilas para Audífonos en Quito</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos públicos -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Cintillo superior de Horario -->
+    <div class="top-bar">
+        <p><i class="fa-solid fa-phone-volume"></i> ¡Atención y Pedidos las 24 Horas! 📞✨ | Envíos desde Quito a todo el país</p>
+    </div>
+
+    <!-- Encabezado Principal / Hero -->
+    <header class="hero">
+        <div class="hero-container">
+            <h1 class="brand-title">Audio Work</h1>
+            <p class="hero-subtitle">Pilas para Audífonos Medicados Originales</p>
+            <div class="brand-badge">
+                <span><i class="fa-solid fa-shield-halved"></i> RAYOVAC ORIGINALES</span>
+                <span><i class="fa-solid fa-calendar-days"></i> CADUCIDAD: 2029 - 2030</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Beneficios -->
+    <section class="benefits">
+        <h2>¿Tus audífonos dejaron de funcionar?</h2>
+        <p class="section-desc">Es posible que solo necesites cambiar la pila. Te ofrecemos:</p>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <i class="fa-solid fa-battery-full gold-icon"></i>
+                <h3>Pilas frescas</h3>
+                <p>De larga duración y máxima energía.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fa-solid fa-chart-line gold-icon"></i>
+                <h3>Rendimiento</h3>
+                <p>Confiable, estable y constante en todo momento.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fa-solid fa-user-doctor gold-icon"></i>
+                <h3>Precios Especiales</h3>
+                <p>Descuentos para profesionales y centros auditivos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Tips de Durabilidad -->
+    <section class="tips-section">
+        <h2>💡 Tips para que tus pilas tengan mayor durabilidad</h2>
+        <div class="tips-container">
+            <div class="tip-item">
+                <span class="tip-number">1</span>
+                <p><strong>Espera 1 minuto:</strong> Tras quitar el sello adhesivo, déjala reposar un minuto antes de ponerla en el audífono. Esto permite que el aire active por completo los componentes de zinc.</p>
+            </div>
+            <div class="tip-item">
+                <span class="tip-number">2</span>
+                <p><strong>Temperatura ambiente:</strong> Guárdalas siempre en un lugar fresco y seco. Nunca las metas en la refrigeradora ni las dejes expuestas bajo el sol directo de Quito.</p>
+            </div>
+            <div class="tip-item">
+                <span class="tip-number">3</span>
+                <p><strong>Abre la portezuela:</strong> Por las noches o cuando no uses tu audífono, deja abierta la tapita de la pila. Así evitarás que consuma energía innecesaria y se oxide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section class="catalog" id="productos">
+        <h2>Nuestro Catálogo de Pilas</h2>
+        <p class="section-desc">Elige el tamaño que corresponde al color de tu empaque:</p>
+        
+        <div class="products-grid">
+            <!-- Pila 13 Blister -->
+            <div class="product-card border-orange">
+                <div class="badge-color orange-bg">Modelo 13 - Naranja</div>
+                <h3>Blíster Pila 13</h3>
+                <p class="pack-info">Paquete con 6 unidades</p>
+                <div class="price">$5<span>.00</span></div>
+                <button class="btn-whatsapp" onclick="enviarPedido('Blíster de Pila 13 (Naranja)', 5)">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                </button>
+            </div>
+
+            <!-- Pila 312 Blister -->
+            <div class="product-card border-brown">
+                <div class="badge-color brown-bg">Modelo 312 - Café</div>
+                <h3>Blíster Pila 312</h3>
+                <p class="pack-info">Paquete con 6 unidades</p>
+                <div class="price">$5<span>.00</span></div>
+                <button class="btn-whatsapp" onclick="enviarPedido('Blíster de Pila 312 (Café)', 5)">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                </button>
+            </div>
+
+            <!-- Pila 13 Caja -->
+            <div class="product-card border-orange promo-card">
+                <div class="badge-color orange-bg">Ahorro Caja</div>
+                <h3>Caja Completa 13</h3>
+                <p class="pack-info">Incluye 10 blísters (60 pilas)</p>
+                <div class="price">$48<span>.00</span></div>
+                <button class="btn-whatsapp" onclick="enviarPedido('Caja de Pila 13 (Naranja)', 48)">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir Oferta por WhatsApp
+                </button>
+            </div>
+
+            <!-- Pila 312 Caja -->
+            <div class="product-card border-brown promo-card">
+                <div class="badge-color brown-bg">Ahorro Caja</div>
+                <h3>Caja Completa 312</h3>
+                <p class="pack-info">Incluye 10 blísters (60 pilas)</p>
+                <div class="price">$48<span>.00</span></div>
+                <button class="btn-whatsapp" onclick="enviarPedido('Caja de Pila 312 (Café)', 48)">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir Oferta por WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 Audio Work - Quito, Ecuador.</p>
+        <a href="https://instagram.com" target="_blank" class="instagram-link">
+            <i class="fa-brands fa-instagram"></i> Síguenos en Instagram @audio_workec
+        </a>
+    </footer>
+
+    <!-- Botón Flotante General de WhatsApp -->
+    <a href="https://wa.me." class="whatsapp-floating" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

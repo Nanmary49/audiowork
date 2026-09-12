@@ -1,0 +1,313 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* --- BARRA SUPERIOR DE HORARIO (24 HORAS) --- */
+.top-bar {
+    background-color: #d4af37; /* Dorado brillante */
+    color: #0b1a30; /* Azul marino muy oscuro */
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- SECCIÓN PRINCIPAL / HERO (Diseño Tarjeta de Presentación) --- */
+.hero {
+    background: linear-gradient(135deg, #0b1a30 0%, #153056 100%);
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid #d4af37;
+}
+
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.brand-title {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    color: #d4af37; /* Dorado */
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.brand-badge {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand-badge span {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+/* --- SECCIÓN BENEFICIOS --- */
+.benefits {
+    padding: 5px 20px 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0b1a30;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    color: #666666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.benefit-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 4px solid #0b1a30;
+}
+
+.gold-icon {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    color: #0b1a30;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* --- SECCIÓN TIPS DE DURABILIDAD (Letra grande y accesible) --- */
+.tips-section {
+    background-color: #0b1a30;
+    color: #ffffff;
+    padding: 50px 20px;
+    border-top: 4px solid #d4af37;
+    border-bottom: 4px solid #d4af37;
+}
+
+.tips-section h2 {
+    color: #d4af37;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.tips-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tip-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #d4af37;
+}
+
+.tip-number {
+    background-color: #d4af37;
+    color: #0b1a30;
+    font-weight: bold;
+    font-size: 1.3rem;
+    min-width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.tip-item p {
+    font-size: 1.15rem; /* Letra más grande para lectura fácil */
+    line-height: 1.6;
+}
+
+/* --- CATÁLOGO DE PRODUCTOS --- */
+.catalog {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Colores de bordes según normativas de las pilas */
+.border-orange { border: 2px solid #ff7a00; }
+.border-brown { border: 2px solid #8b5a2b; }
+
+.badge-color {
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 auto 15px auto;
+}
+
+.orange-bg { background-color: #ff7a00; }
+.brown-bg { background-color: #8b5a2b; }
+
+.product-card h3 {
+    font-size: 1.4rem;
+    color: #0b1a30;
+    margin-bottom: 5px;
+}
+
+.pack-info {
+    color: #777777;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #0b1a30;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 1.2rem;
+}
+
+/* Botones Grandes de WhatsApp */
+.btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebd58;
+}
+
+/* Tarjeta Destacada de Promoción (Caja) */
+.promo-card {
+    background: linear-gradient(180deg, #ffffff 0%, #fffdf3 100%);
+    border-width: 3px;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    background-color: #0b1a30;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-top: 4px solid #d4af37;
+}
+
+.instagram-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.instagram-link:hover {
+    text-decoration: underline;
+}
+
+/* --- BOTÓN FLOTANTE GENERAL --- */
+.whatsapp-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-floating:hover {
+    background-color: #1ebd58;
+}
